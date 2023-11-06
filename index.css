@@ -1,0 +1,126 @@
+main {
+    width: 100%;
+    height: calc(100vh - 60px);
+    background-color: #A15A2C;
+    margin-top: 60px;
+    background-image: url(/img-main/My\ Character.png), url(/img-main/cookie-backgournd.jpg);
+    background-size: 70vh, cover;
+    background-repeat: no-repeat;
+    background-position: right, bottom;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-want_choclate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+}
+.want-choclate {
+    width: fit-content;
+    height: 60vh;
+    margin: auto;
+}
+
+.fav-choclate {
+    width: fit-content;
+    height: 3.5vh;
+    margin-top: auto;
+    background-color: #464141;
+    border-radius: 20px;
+}
+
+
+
+
+
+
+
+/*! CATEGORY SECTION */
+.main-category {
+    position: relative;
+    width: 100%;
+    padding: 15% 0;
+    background-color: #af2d2d;
+    display: flex;
+    justify-content: center;
+    column-gap: 50px;
+    flex-wrap: wrap;
+}
+.main-category p{
+    color: #111;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 40px;
+    margin-bottom: 20px;
+    flex-basis: 100%;
+    text-transform: uppercase;
+    font-size: 50px;
+    /* text-shadow: -2px 4px 4px #000; */
+}
+
+.main-catergory-box {
+    width: 22vw;
+    height: 32vh;
+    /* width: 350px;
+    height: 350px; */
+    border-radius: 50px;
+    background-color: #111;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: 0.4s;
+}
+
+.main-catergory-box:nth-child(2) {
+    background-image: url(/img-category/replit.png);
+}
+.main-catergory-box:nth-child(3) {
+    background-image: url(/img-category/replit.png);
+}
+.main-catergory-box:nth-child(4) {
+    background-image: url(/img-category/free-code-camp.png);
+}
+.main-catergory-box:nth-child(5) {
+    background-image: url(/img-category/free-code-camp.png);
+}
+
+.dark-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 50px;
+    background-color: #000;
+    opacity: 0.7;
+    transition: all ease-in-out 200ms;
+}
+
+.main-catergory-box:hover .dark-overlay {
+    opacity: 0;
+}
+
+.main-catergory-box:hover {
+    width: 22vw;
+    height: 32vh;
+    /* width: 350px;
+    height: 350px; */
+    transform: scale(1.1);
+}
+
+
+
+.main-catergory-box h3 {
+    font-size: 25px;
+    line-height: 38px;
+    text-align: center;
+    text-shadow: -2px 4px 4px #000;
+    z-index: 100;
+}
